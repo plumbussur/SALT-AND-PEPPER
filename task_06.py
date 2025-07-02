@@ -1,6 +1,6 @@
-class WrongNumberOfPlayersError():
+class WrongNumberOfPlayersError(Exception):
     pass
-class NoSuchStrategyError():
+class NoSuchStrategyError(Exception):
     pass
 
 
