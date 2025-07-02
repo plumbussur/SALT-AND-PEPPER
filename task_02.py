@@ -1,6 +1,9 @@
-def coincidence(list, range):
+def coincidence(list=None, range=None):
     new_list = []
-    
+    if not list or not range:
+        return new_list
+
+
     start_obj = range.start
     stop_obj = range.stop
     
@@ -13,7 +16,7 @@ def coincidence(list, range):
     return new_list
 
 
-print(coincidence([None, 1, 'foo', 4, 2, 2.5], range(1, 4)))
+
 
 
 #Done
