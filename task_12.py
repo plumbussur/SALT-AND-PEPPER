@@ -36,10 +36,12 @@ class JellyBean(Dessert):
         super().__init__(name, calories)
         self._flavor = flavor
     
-    def get_flavor(self):
+    @property
+    def flavor(self):
         return self._flavor
     
-    def set_flavor(self, new_flavor):
+    @flavor.setter
+    def flavor(self, new_flavor):
         self._flavor = new_flavor
     
     def is_delicious(self):
